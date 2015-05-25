@@ -8,10 +8,9 @@ from .forms import IncidentLog
 def index(request):
     return render(request, 'report_it/index.html')
 
-
 def log(request):
     if request.method == 'GET':
-        form = IncidentLog()
+        form = IncidentLog(label_suffix='')
     else:
         form = IncidentLog(request.POST)
         if form.is_valid():
