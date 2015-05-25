@@ -24,7 +24,6 @@ def log(request):
     return render(request, 'report_it/log.html', {'form': form})
 
 def confirmation(request):
-    return HttpResponse('Your incident log has been sent. Thanks for using Report It.')
-    # return render(request, 'report_it/confirmation.html')
+    return render(request, 'report_it/confirmation.html')
 
 
