@@ -1,21 +1,33 @@
 * {
    font-family: helvetica, sans-serif;
 }
-.title {
-	text-align: center
+/*.title {
+   text-align: center
+}*/
+@media screen and (min-width: 641px) {
+   .title {text-align: center;
+      font-size: 20pt
+   }
+}
+@media screen and (max-width: 640px) and (min-width: 321px) {
+   .title {text-align: center;
+   }
+}
+@media screen and (max-width: 320px) {
+   .title {text-align: center;
+   }
 }
 .subtitle {
-	text-align: center;
-	font-size: 10pt;
+   text-align: center;
+   font-size: 10pt;
 }
 input {
-	width: 66%;
+   width: 66%;
 }
 #context {
    width: 66%;
 }
 .context {
-<<<<<<< HEAD
    height: 5em;
    width:   30em;
 }
@@ -30,22 +42,6 @@ input {
    margin-right: auto;
    width: 10%;
    padding-left: 10em;
-=======
-	height: 5em;
-	width:	30em;
-}
-.pure-form { 
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-.button {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 10%;
-	padding-left: 10em;
->>>>>>> 8c51e5e191c69a3c7677e35e8ae5164e81da6d82
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
    background: -webkit-gradient(linear, left top, left bottom, from(#f200a5), to(#65a9d7));
